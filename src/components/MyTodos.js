@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
 import CreateData from "./CreateData.js";
 import DataLists from "./DataLists.js";
-
-class Inventory extends Component {
+class MyTodos extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -121,15 +120,15 @@ class Inventory extends Component {
   };
 
   render() {
-    const {state, addData, handleChange, saveUpdate, removeData, handleUpdate} = this,
-    {
-      dataLists,
-      Id,
-      Title,
-      Quantity,
-      Description,
-      isEditing
-    } = state;
+    const { state, addData, handleChange, saveUpdate, removeData, handleUpdate } = this,
+      {
+        dataLists,
+        Id,
+        Title,
+        Quantity,
+        Description,
+        isEditing
+      } = state;
 
     return (
       <Grid container spacing={0}>
@@ -157,4 +156,4 @@ class Inventory extends Component {
   }
 }
 
-export default Inventory;
+export default MyTodos;

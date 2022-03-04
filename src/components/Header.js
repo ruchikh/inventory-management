@@ -9,7 +9,7 @@ class Header extends Component {
     return (
       <AppBar position="static" className={classes.appBar}>
         <h2 className={classes.logo}>
-          Inventory Management
+          Todos
         </h2>
       </AppBar>
     );
